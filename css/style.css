@@ -1,0 +1,92 @@
+/* Box Model Hack */
+* {
+    box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+ 
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/*header*/
+header .main-head-cont{
+    display: flex;
+    justify-content: flex-end;
+}
+header .main-head-cont div{
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+}
+.header-list{
+    display: flex;    
+    flex-direction: row;
+    justify-content: space-between;
+}
+.header-list{
+    display: flex;
+    padding: 0;
+    margin-right: 20px;
+    list-style-type: none;
+    
+}
+.header-list li{
+    margin-right: 10px;
+}
+#dropdown{
+    display: none;
+}
+
+
+footer {
+    display: fixed;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+section{
+    outline: 1px solid black;
+}
+aside{
+    outline: 1px solid blue;
+}
+
+.reel{
+    outline: 1px solid red;
+}
+
+/******************************************
+/* MEDIA QUERIES
+/*******************************************/
+
+@media screen and (max-width: 735px){
+    #dropdown{
+        display: block;
+    }
+    header .main-head-cont{
+        visibility: hidden;
+    }
+}
